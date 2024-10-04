@@ -7,19 +7,33 @@
 </head>
 <body>
     <script>
-        str1="";
-        str2="";
-        str="h4e3llo wo1rl5d";
-        num="0123456789"
-        for(i of str){
-            if(num.includes(i)){
-                str1+=i;
+        // str1="";
+        // str2="";
+        // str="h4e3llo wo1rl5d";
+        // num="0123456789"
+        // for(i of str){
+        //     if(num.includes(i)){
+        //         str1+=i;
+        //     }else{
+        //         str2+=i
+        //     }
+        // }
+        // console.log(str1);
+        // console.log(str2);
+        let str="MKousar1234";
+        num="";
+        alpha=""
+        for(i in str){
+            a=str.charCodeAt(i)
+            console.log(a);
+            if((a>=65 && a<=97) || (a>=97 && a<=122)){
+                alpha+=str[i];
             }else{
-                str2+=i
+                num+=str[i];
             }
         }
-        console.log(str1);
-        console.log(str2);
+        console.log(alpha);
+        console.log(num);
     </script>
 </body>
 </html>
