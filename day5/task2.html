@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a program to check whether the given digit is present in the number or not if present count the occurences
+eg: "153" n=5   output=true,1 -->
+<script>
+    // To check number is present or not
+    n=1231
+    chk=5;
+    c=false;
+    while(n>0){
+        res=n%10;
+        if(res==chk){
+            c=true;
+            break;
+        }
+        n=Math.floor(n/10);
+    }
+    if(c){
+        console.log("number is found");
+    }else{
+        console.log("number is not found");
+    }
+    //To count the number of occurences
+    n=15253515
+    chk=5;
+    c=0;
+    while(n>0){
+        res=n%10;
+        if(res==chk){
+            c++;
+        }
+        n=Math.floor(n/10);
+    }
+    console.log(c);
+</script>
+</body>
+</html>

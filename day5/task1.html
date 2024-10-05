@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         write a program  to find the sum of all the digits in the given number is prime or not
+// eg:123  sum=6 "Not Prime"
+
+        n=32;
+        rem=0;
+        sum=0;
+        while(n!=0){
+            rem=n%10;
+            sum=sum+rem;
+            n=Math.floor(n/10);
+        }
+        console.log(sum);
+        check=true
+        for(i=2;i<sum;i++){
+            if(sum%i==0){
+                check=false;
+                break;
+            }
+        }
+        if(check){
+            console.log("prime");
+        }else{
+            console.log("not prime");
+        }
+    </script>
+</body>
+</html>
