@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = 12345;
+let psum = 0;
+let rem = 0;
+let Nsum=0;
+while (n != 0) {
+    rem = n % 10;
+    let isPrime = true;
+
+    // Check if rem is non-prime
+    if (rem <= 1) {
+        isPrime = false; // 0 and 1 are not prime, so they are non-prime
+    } else {
+        for (let i = 2; i < rem; i++) {
+            if (rem % i === 0) {
+                isPrime = false; // rem is non-prime
+                break;
+            }
+        }
+    }
+
+    if (!isPrime) {
+        psum += rem; // Add to sum if rem is non-prime
+    }else{
+        Nsum+=rem;
+    }
+
+    n = Math.floor(n / 10); // Move to the next digit
+}
+
+console.log(psum);
+console.log(Nsum);
+    </script>
+</body>
+</html>
