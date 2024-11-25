@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str="racecar";
+        str1=""
+            if(str[0]===str[0].toUpperCase()){
+                for(j=0;j<str.length;j++){
+                    if(j%2!==0){
+                        str1+=str[j].toLowerCase();
+                    }else{
+                        str1+=str[j].toUpperCase();
+                    }
+                }
+            }else{
+                for(k=0;k<str.length;k++){
+                    if(k%2!==0){
+                        str1+=str[k].toUpperCase();
+                    }else{
+                        str1+=str[k].toLowerCase();
+                    }
+                }
+                
+            }
+
+console.log(str1);
+    </script>
+</body>
+</html>
